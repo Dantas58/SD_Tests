@@ -118,8 +118,8 @@ public class VotacaoC implements Votacao{
                 conFinal.await();
             }
 
-            int res = Collections.max(votos);
-            return res;
+            int vencedor = Collections.max(votos);
+            return votos.indexOf(vencedor);
         }
         finally{
             l.unlock();
