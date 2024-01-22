@@ -11,7 +11,7 @@ interface Controlador {
     int[] voltasCompletas();
     int vencedor() throws InterruptedException;
 }
-public class ControladorGay implements Controlador{
+public class ControladorC implements Controlador{
     
 
     private Map<Integer, Integer> voltas_feitas;
@@ -30,7 +30,7 @@ public class ControladorGay implements Controlador{
     private int vencedor = -1;
 
 
-    public ControladorGay(int N, int V){
+    public ControladorC(int N, int V){
 
         this.total_karts = N;
         this.total_voltas = V;

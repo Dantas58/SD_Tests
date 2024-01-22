@@ -8,7 +8,7 @@ interface Reunião {
     int naSala();
     int aEspera();
 }
-public class ReuniãoGay implements Reunião{
+public class ReuniãoC implements Reunião{
 
     private Map<Integer, Integer> listas;
     private int lista_ativa;
@@ -17,7 +17,7 @@ public class ReuniãoGay implements Reunião{
     private ReentrantLock sala_lock;
     private Condition sala_ocupada;
 
-    public ReuniãoGay(){
+    public ReuniãoC(){
         this.listas = new HashMap<>();
         this.lista_ativa = -1;
         this.nr_participantes = 0;

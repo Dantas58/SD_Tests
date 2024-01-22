@@ -11,7 +11,7 @@ interface Cache {
     void evict(int key);
 }
 
-public class CacheGay implements Cache {
+public class CacheC implements Cache {
 
     private int maxKeys;
     private Map<Integer, byte[]> mapa;
@@ -19,7 +19,7 @@ public class CacheGay implements Cache {
     private Map<Integer, List<Condition>> conditions;
     private List<Integer> keys_espera;
 
-    public CacheGay(int N){
+    public CacheC(int N){
 
         this.maxKeys = N;
         this.mapa = new HashMap<>();
